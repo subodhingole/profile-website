@@ -1,0 +1,31 @@
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-color, 0.8),
+      rgba($tertiary-color, 0.8)
+    ),
+    url(../img/my-pig.jpg);
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0% 100%);
+  position: relative;
+
+  &__logo {
+    height: 8rem;
+    margin: 2rem 0 0 2rem;
+  }
+
+  &__logo-box {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  &__middle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

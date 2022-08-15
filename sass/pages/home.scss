@@ -1,0 +1,24 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+.section-features {
+  margin-top: -8rem;
+  padding: 20rem 0;
+  background-color: $color-grey-light-1;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-color, 0.8),
+      rgba($tertiary-color, 0.8)
+    ),
+    url(../img/me2.jpg);
+  height: 95vh;
+  background-size: cover;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
