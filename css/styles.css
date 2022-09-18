@@ -72,6 +72,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
@@ -133,6 +136,16 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f9f0f0;
+  padding: 25rem 0 0rem 0;
+  margin-top: -13vh; }
+
+.section-stories {
+  background-color: #f9f0f0;
+  padding: 25rem 0;
+  margin-top: -13vh; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(227, 253, 253, 0.8), rgba(166, 227, 233, 0.8)), url(../img/my-pig.jpg);
@@ -203,6 +216,24 @@ body {
     animation-delay: 1s;
     animation-fill-mode: backwards; }
   .btn--white--linkedin {
+    animation-name: fadeInFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards; }
+
+.btn--blue {
+  background-color: #468cd1;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #468cd1; }
+  .btn--blue--github {
+    animation-name: fadeInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: backwards; }
+  .btn--blue--linkedin {
     animation-name: fadeInFromRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -295,3 +326,121 @@ body {
     box-shadow: 0 3.5rem 4rem rgba(0, 0, 0, 0.6); }
   .feature-box__text {
     font-size: 1.6rem; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    position: absolute;
+    padding: 2rem;
+    width: 100%;
+    transition: all 0.8s ease;
+    height: 50rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, rgba(237, 166, 138, 0.8), rgba(154, 86, 66, 0.8)); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, rgba(98, 190, 221, 0.8), rgba(70, 140, 209, 0.8)); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+      .card__side--back--goto {
+        text-decoration: none;
+        background-color: #fff;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: revert;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture-3 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/alumni.png);
+      background-position: top; }
+    .card__picture-2 {
+      background-image: linear-gradient(to right bottom, rgba(98, 190, 221, 0.8), rgba(70, 140, 209, 0.8)), url(../img/alumni.png);
+      background-position: top; }
+    .card__picture-1 {
+      background-image: linear-gradient(to right bottom, rgba(237, 166, 138, 0.8), rgba(154, 86, 66, 0.8)), url(../img/alumni.png);
+      background-position: top; }
+  .card__heading {
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    width: 60%; }
+  .card__heading-span {
+    -webkit-box-decoration-break: clone;
+    padding: 1rem; }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+    .card__heading-span--2 {
+      width: 2rem;
+      background-image: linear-gradient(to right bottom, #62bedd, #468cd1); }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, #eda68a, #9a5642); }
+  .card__details ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 4rem; }
+    .card__details ul li {
+      font-size: 2rem;
+      padding: 0.5rem;
+      text-align: center; }
+      .card__details ul li:not(:last-child) {
+        border-bottom: 1px solid rgba(126, 213, 111, 0.2); }
+
+.story {
+  width: 75%;
+  min-height: 25rem;
+  padding: 6rem;
+  padding-left: 9rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story > * {
+    transform: skewX(12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative; }
+  .story__img {
+    height: 100%; }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.5s; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
