@@ -147,6 +147,21 @@ body {
   margin-top: 5vh;
   position: relative; }
 
+.section-booking {
+  padding: 15rem 0;
+  margin-top: 5vh;
+  background-color: #f9f0f0;
+  background-image: linear-gradient(to bottom right, rgba(249, 240, 240, 0.2), rgba(70, 140, 209, 0.5)); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 50%, rgba(0, 0, 0, 0) 50%), url(../../img/edited-image.jpg);
+  height: 50rem;
+  background-size: cover;
+  background-position: 10% 50%; }
+  .book__form {
+    padding: 6rem;
+    width: 50%; }
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(227, 253, 253, 0.8), rgba(166, 227, 233, 0.8)), url(../img/my-pig.jpg);
   height: 95vh;
@@ -192,6 +207,36 @@ body {
     width: calc( (2 * ((100% - 3 * 6rem) / 4)) + 6rem); }
   .row .col-3-of-4 {
     width: calc( (3 * ((100% - 3 * 6rem) / 4)) + 2 *6rem); }
+
+.footer {
+  padding: 10rem;
+  background-color: #333;
+  margin-bottom: 8rem;
+  color: white;
+  position: relative; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__logo {
+    width: 15rem;
+    height: auto;
+    position: relative;
+    right: 1rem; }
+  .footer__item {
+    display: inline;
+    margin: 0 1rem; }
+  .footer__link, .footer__link:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem; }
+  .footer__navigation {
+    border-top: 1px solid white;
+    width: fit-content; }
+  .footer__copyright {
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 0 8rem;
+    border-top: 1px solid white;
+    width: fit-content; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -466,3 +511,44 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.2rem 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 80%;
+  display: block; }
+  .form__input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid lightgreen;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid yellow; }
+
+.form__label {
+  margin: 0 2rem;
+  font-size: 1.2rem;
+  display: block;
+  transition: all 0.4s; }
+
+.form__input:placeholder-shown + .form__label {
+  visibility: hidden;
+  transform: translateY(-3rem); }
+
+.form__button {
+  display: block;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 1px solid #468cd1;
+  background-image: linear-gradient(to right, #468cd1, #62bedd);
+  color: white;
+  font-style: inherit;
+  position: relative;
+  left: 8rem; }
