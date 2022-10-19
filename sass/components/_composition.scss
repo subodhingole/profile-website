@@ -11,18 +11,36 @@
     &--p1 {
       top: 0rem;
       left: 0%;
+
+      @include respond(phone) {
+        top: 4rem;
+        left: 0rem;
+        z-index: 1;
+      }
     }
 
     &--p2 {
       top: 6rem;
       left: 50%;
       z-index: 1;
+
+      @include respond(phone) {
+        top: 8rem;
+        left: 16rem;
+        z-index: 1;
+      }
     }
 
     &--p3 {
       top: 16rem;
       left: 15%;
       z-index: 2;
+
+      @include respond(phone) {
+        top: 14rem;
+        left: 6rem;
+        z-index: 2;
+      }
     }
 
     &:hover {

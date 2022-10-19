@@ -10,10 +10,18 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+
+    @include respond(phone) {
+      margin: 1rem 0;
+    }
   }
   &--white {
     background-color: white;
     color: #777;
+
+    @include respond(phone) {
+      display: block;
+    }
 
     &::after {
       background-color: white;

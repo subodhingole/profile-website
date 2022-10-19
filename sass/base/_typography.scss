@@ -3,16 +3,20 @@ body {
   line-height: 1.7;
   font-size: $default-font-size;
   font-weight: 400;
-  padding: 3rem;
 }
 
 .heading {
-  font-size: 4rem;
   color: black;
   line-height: 1.7;
   margin-bottom: 3rem;
-
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
+  @include respond(phone) {
+    font-size: 5rem;
+  }
   &--primary {
+    font-size: 4rem;
     display: block;
     letter-spacing: 0.7rem;
     text-transform: uppercase;
@@ -31,6 +35,13 @@ body {
     animation-name: fadeInFromBottom;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(tab-port) {
+      font-size: 1rem;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
@@ -39,6 +50,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
   color: transparent;
+  margin: 0 2rem;
   background: linear-gradient(to right, $blue, $dark-blue);
   -webkit-background-clip: text;
   transition: all 0.2s;
@@ -47,6 +59,22 @@ body {
     transform: skewX(-3deg) skewY(-3deg) scale3d(1.1, 1.1, 1.1);
     -webkit-background-clip: text;
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  }
+
+  @include respond(big-desktop) {
+    font-size: 3rem;
+  }
+  @include respond(tab-land) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+    margin: 0 20rem;
+  }
+  @include respond(phone) {
+    font-size: 3rem;
+    margin: 0 5rem;
   }
 }
 
