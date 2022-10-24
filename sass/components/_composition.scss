@@ -7,7 +7,9 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     // border-radius: 1px;
     position: absolute;
-
+    @include respond(phone-min) {
+      transform: scale(0.8);
+    }
     &--p1 {
       top: 0rem;
       left: 0%;
@@ -15,6 +17,11 @@
       @include respond(phone) {
         top: 4rem;
         left: 0rem;
+        z-index: 1;
+      }
+      @include respond(phone-min) {
+        top: 0rem;
+        left: -4rem;
         z-index: 1;
       }
     }
@@ -29,6 +36,11 @@
         left: 16rem;
         z-index: 1;
       }
+      @include respond(phone-min) {
+        top: 0rem;
+        left: 18rem;
+        z-index: 1;
+      }
     }
 
     &--p3 {
@@ -38,8 +50,13 @@
 
       @include respond(phone) {
         top: 14rem;
-        left: 6rem;
+        left: 10rem;
         z-index: 2;
+      }
+      @include respond(phone-min) {
+        top: 2rem;
+        left: 6rem;
+        z-index: 1;
       }
     }
 
