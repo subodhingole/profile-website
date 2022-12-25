@@ -30,25 +30,26 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
+            
+            <a href="#about" class="navigation__link"
               ><span>01</span>About Subodh Ingole</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
+            <a href="#features" class="navigation__link"
               ><span>02</span>My Attributes</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>03</span>Projects</a>
+            <a href="#projects" class="navigation__link"><span>03</span>Projects</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
+            <a href="#quotes" class="navigation__link"
               ><span>04</span>Quotes By My Close Ones</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05</span>Hire me</a>
+            <a href="#hiring" class="navigation__link"><span>05</span>Hire me</a>
           </li>
         </ul>
       </nav>
@@ -81,7 +82,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section id="about" class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             I'm a programmer who loves to code and learn new things.
@@ -131,7 +132,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section id="features" class="section-features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -179,7 +180,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section id="projects" class="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">My Projects</h2>
         </div>
@@ -274,62 +275,57 @@
         </div>
       </section>
 
-      <section class="section-stories">
+      <section id="quotes" class="section-stories">
         <div class="bg-video">
-          <video class="bg-video__content" loop autoplay muted>
-            <source src="img/video.mp4" type="video/mp4" />
-            <source src="img/video.webm" type="video/webm" />
-          </video>
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="img/video.mp4" type="video/mp4">
+                <source src="img/video.webm" type="video/webm">
+                Your browser is not supported!
+            </video>
         </div>
+
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">Some quotes from the people I love</h2>
+            <h2 class="heading-secondary">
+                We make people genuinely happy
+            </h2>
         </div>
 
         <div class="row">
-          <div class="story">
-            <figure class="story__shape">
-              <img src="img/tina-circle.png" class="story__img" alt="" />
-              <figcaption class="story__caption">Tina Kasarle</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Tina Kasarle
-              </h3>
-              <p>"Tak tula je takaychay.. "</p>
-            </div>
+          <div class="story" style="min-height: 250px;">
+              <figure class="story__shape">
+                  <img src="img/tina-circle.png" alt="Person on a tour" class="story__img">
+                  <figcaption class="story__caption">Tina Kasarle</figcaption>
+              </figure>
+              <div class="story__text">
+                  <h3 class="heading-tertiary u-margin-bottom-small">Tina Kasarle</h3>
+                  <p>
+                    "Tak tula je takaychay.. "
+                  </p>
+              </div>
           </div>
+      </div>
 
-          <div class="story">
-            <figure class="story__shape">
-              <img src="img/omkar-circle.png" class="story__img" alt="" />
-              <figcaption class="story__caption">Omkar Bahirwade</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Omkar Bahir- wade
-              </h3>
-              <p>
-                Underestimate yourself, but know you are better than everyone
-                else. You won't see ego.
-              </p>
+        <div class="row">
+            <div class="story">
+                <figure class="story__shape">
+                    <img src="img/omkar-circle.png" alt="Person on a tour" class="story__img">
+                    <figcaption class="story__caption">Omkar Bahirwade</figcaption>
+                </figure>
+                <div class="story__text">
+                    <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
+                    <p>
+                      Underestimate yourself, but know you are better than everyone else. You won't see ego.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="story">
-            <figure class="story__shape">
-              <img src="img/atharva-circle.png" class="story__img" alt="" />
-              <figcaption class="story__caption">Atharva Hange</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Atharva Hange
-              </h3>
-              <p>People can pretend that they're not stupid, but they are.</p>
-            </div>
-          </div>
         </div>
-      </section>
 
-      <section class="section-booking">
+        <div class="u-center-text u-margin-top-huge">
+            <a href="#" class="btn-text">Read all stories &rarr;</a>
+        </div>
+    </section>
+
+      <section id="hiring" class="section-booking">
         <div class="row">
           <div class="book">
             <div class="book__form">

@@ -27,6 +27,11 @@ section {
     height: 200vh;
   }
 
+  @include respond(tab-port) {
+    padding: 10rem 0;
+    height: 230vh;
+  }
+
   & > * {
     transform: skewY(7deg);
   }
@@ -55,12 +60,13 @@ section {
     rgba($dark-blue, 0.5)
   );
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     display: none;
   }
 }
 
 .form__mobile {
+  display: none;
   height: fit-content;
   margin: 5rem auto;
   overflow: hidden;
@@ -76,6 +82,10 @@ section {
       url(../../img/me2.webp);
     background-size: cover;
     background-position: 90% 10%;
+  }
+
+  @include respond(tab-port) {
+    display: block;
   }
 }
 

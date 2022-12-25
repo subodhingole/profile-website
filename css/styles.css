@@ -191,6 +191,10 @@ section {
     .section-features {
       padding: 10rem 0;
       height: 200vh; } }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem 0;
+      height: 230vh; } }
   .section-features > * {
     transform: skewY(7deg); }
 
@@ -210,11 +214,12 @@ section {
   overflow: hidden;
   background-color: #f9f0f0;
   background-image: linear-gradient(to bottom right, rgba(249, 240, 240, 0.2), rgba(70, 140, 209, 0.5)); }
-  @media (max-width: 75em) {
+  @media (max-width: 56.25em) {
     .section-booking {
       display: none; } }
 
 .form__mobile {
+  display: none;
   height: fit-content;
   margin: 5rem auto;
   overflow: hidden; }
@@ -224,6 +229,9 @@ section {
     background-image: linear-gradient(155deg, rgba(0, 0, 0, 0.55) 100%, rgba(0, 0, 0, 0) 100%), url(../../img/me2.webp);
     background-size: cover;
     background-position: 90% 10%; }
+  @media (max-width: 56.25em) {
+    .form__mobile {
+      display: block; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 50%, rgba(0, 0, 0, 0) 50%), url(../../img/edited-image.jpg);
@@ -796,8 +804,7 @@ section {
     .story {
       width: 100%;
       padding: 4rem;
-      padding-left: 7rem;
-      margin-bottom: 4rem; } }
+      padding-left: 7rem; } }
   @media (max-width: 37.5em) {
     .story {
       transform: skewX(0); } }
@@ -805,29 +812,26 @@ section {
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: white;
     transform: translateX(-3rem) skewX(12deg);
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
     border-radius: 50%; }
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
       .story__shape {
-        clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
         -webkit-shape-outside: circle(50% at 50% 50%);
-        border-radius: 0; } }
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none; } }
     @media (max-width: 37.5em) {
       .story__shape {
         transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
+    transform: scale(1);
     backface-visibility: hidden;
-    transition: all 0.5s; }
-    @media (max-width: 37.5em) {
-      .story__img {
-        transform: translateX(0rem) scale(1); } }
+    transition: all 0.5s;
+    background-position: center; }
   .story__text {
     transform: skewX(12deg); }
     @media (max-width: 37.5em) {
@@ -849,7 +853,7 @@ section {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
-    transform: translateX(-4rem) scale(1);
+    transform: scale(1.4);
     filter: blur(3px) brightness(80%); }
 
 .bg-video {
