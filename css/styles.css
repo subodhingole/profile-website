@@ -1009,3 +1009,6 @@ section {
     .popup__cross a {
       text-decoration: none;
       color: white; }
+  @media (max-width: 75em) {
+    .popup {
+      display: none; } }
